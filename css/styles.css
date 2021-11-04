@@ -63,6 +63,7 @@ h6 {
 }
 /*hero*/
 .hero {
+  background-color: var(--bg-footer);
 }
 .hero-title {
   font-weight: 900;
@@ -72,7 +73,6 @@ h6 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-headlines-second);
-  background-color: var(--bg-footer);
 }
 .hero-btn {
   font-weight: 700;
@@ -82,6 +82,11 @@ h6 {
   color: var(--color-headlines-second);
   background-color: var(--color-decor);
   cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--color-decor);
+  background-color: var(--bg-main);
 }
 /*---header end---*/
 
@@ -147,7 +152,7 @@ h6 {
 }
 /*---main end---*/
 
-/*---footer---*/
+/*---footer start---*/
 .footer {
   background-color: var(--bg-footer);
 }
@@ -160,7 +165,7 @@ h6 {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.address-map {
+.address-map-link {
   text-decoration: none;
   color: var(--color-headlines-second);
 }
@@ -170,4 +175,49 @@ h6 {
 .address-link {
   text-decoration-line: none;
   color: rgba(255, 255, 255, 0.6);
+}
+.address-map-link:hover,
+.address-map-link:focus,
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-decor);
+}
+/*--footer end**/
+
+/*PORTFOLIO style*/
+.portfolio-list-btns {
+  font-family: inherit;
+  list-style-type: none;
+}
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-headlines);
+  background-color: var(--bg-section-decor);
+  cursor: pointer;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--color-headlines-second);
+  background-color: var(--color-decor);
+}
+.portfolio-cards {
+  list-style-type: none;
+}
+.portfolio-card {
+  background-color: var(--bg-main);
+}
+.portfolio-card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-card-desc {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
