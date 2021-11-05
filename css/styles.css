@@ -3,6 +3,7 @@
   --color-headlines-second: #ffffff;
   --color-text: #757575;
   --color-decor: #2196f3;
+  --color-decor-second: #188ce8;
   --bg-main: #ffffff;
   --bg-footer: #2f303a;
   --bg-section-decor: #f5f4fa;
@@ -45,20 +46,28 @@ h6 {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.nav-link {
+  text-transform: capitalize;
+}
 .nav-list,
 .contacts-list {
   list-style-type: none;
 }
-.nav-link,
-.contacts-link {
+.nav-link {
   text-decoration: none;
   color: var(--color-headlines);
-  text-transform: capitalize;
+}
+.contacts-link {
+  text-decoration: none;
+  color: inherit;
 }
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
+  color: var(--color-decor);
+}
+.nav-link.curent {
   color: var(--color-decor);
 }
 /*hero*/
@@ -75,6 +84,8 @@ h6 {
   color: var(--color-headlines-second);
 }
 .hero-btn {
+  padding: 10px 32px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   text-align: center;
@@ -85,8 +96,8 @@ h6 {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--color-decor);
-  background-color: var(--bg-main);
+  background-color: var(--color-decor-second);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 /*---header end---*/
 
@@ -190,6 +201,8 @@ h6 {
   list-style-type: none;
 }
 .portfolio-btn {
+  padding: 6px 22px;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
